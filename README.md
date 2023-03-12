@@ -9,6 +9,7 @@ Các chức năng và thư viện quan trọng sử dụng trong Project:
 - Chat nhau giữa các user (Chưa hoàn thiện :socketIO)
 - Trạng thái giao hàng và lịch sử đặt hàng (Chưa hoàn thiện)
   và nhiều các thao tác nhỏ khác.
+- Responsive các màn hình khác nhau
 
 +BE
 
