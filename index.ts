@@ -23,7 +23,9 @@ app.use(cors());
 // };
 //---------------- router
 const routerAuth = require("./routers/authRouter");
+const routerProduct = require("./routers/productRouter");
 app.use("/api/auth", routerAuth);
+app.use("/api/product", routerProduct);
 
 app.get("/", function (req: any, res: any) {
   res.send("Trung Nguyên");

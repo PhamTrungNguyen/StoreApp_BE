@@ -1,5 +1,5 @@
-const mongoose = require("mongoose");
-const accountSchema = new mongoose.Schema({
+const mongooseAccount = require("mongoose");
+const accountSchema = new mongooseAccount.Schema({
   username: {
     type: String,
     required: true,
@@ -10,11 +10,11 @@ const accountSchema = new mongoose.Schema({
   },
   password: {
     type: String,
-    required: true,
+    required: false,
   },
   role: {
     type: String,
     required: true,
   },
 });
-module.exports = mongoose.model("Account", accountSchema);
+module.exports = mongooseAccount.model("Account", accountSchema);
