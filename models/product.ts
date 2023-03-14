@@ -28,5 +28,9 @@ const productSchema = new mongooseProduct.Schema({
     type: String,
     required: true,
   },
+  delete: {
+    type: Boolean,
+    default: false,
+  },
 });
 module.exports = mongooseProduct.model("product", productSchema);

@@ -6,12 +6,12 @@ function checkRole(roles: string[] = []) {
   return async (req: Request, res: Response, next: NextFunction) => {
     const { authorization } = req?.headers;
     console.log(
-      "🚀 ~ file: checkRoleMW.js:7 ~ return ~ authorization",
+      "🚀 ~ file: checkRoleMW.ts:8 ~ return ~ authorization:",
       authorization
     );
     try {
       if (!authorization) {
-        return res.status(401).json("Chưa đăng nhập");
+        return res.status(401).json("Vui lòng đăng nhập");
       }
       const token = authorization.split(" ")[1];
       const parseToken = parseJwt(token);
